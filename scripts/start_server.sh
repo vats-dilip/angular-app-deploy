@@ -7,11 +7,6 @@ cd /var/www/html/my-app
 npm install
 
 # Build the Angular app for production
-ng build --prod
+nohup ng serve --host 0.0.0.0 --disable-host-check > /dev/null 2>&1 &
 
-# Copy the built files to the Apache document root
-sudo cp -r dist/my-app/* /var/www/html/
-
-# Restart Apache to serve the new files
-sudo systemctl restart apache2
 
