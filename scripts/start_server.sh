@@ -7,5 +7,4 @@ cd /var/www/html/my-app
 npm install
 
 # Build the Angular app for production
-#nohup ng serve --host 0.0.0.0 --disable-host-check > /dev/null 2>&1 &
-ng serve --host 0.0.0.0 --disable-host-check 
+nohup ng serve --host 0.0.0.0 --disable-host-check > /dev/null 2>&1 &
