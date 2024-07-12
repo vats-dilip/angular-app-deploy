@@ -6,7 +6,7 @@ cd /var/www/html/my-app
 # Install dependencies
 npm install
 
-# Build the Angular app
+# Build the Angular app for production
 ng build --prod
 
 # Copy the built files to the Apache document root
